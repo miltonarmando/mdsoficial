@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/miltonarmando/mdsoficial/issues"
   },
-  "homepage": "https://github.com/miltonarmando/mdsoficial#readme"
+  "homepage": "https://github.com/miltonarmando/mdsoficial#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
