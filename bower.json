@@ -1,0 +1,21 @@
+{
+  "name": "index.html",
+  "description": "mds solitions official site",
+  "main": "index.js",
+  "authors": [
+    "<miltonarmando@outlook.com> (miltonarmando <miltonarmando@outlook.com>)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/miltonarmando/mdsoficial",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}

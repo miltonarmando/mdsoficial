@@ -1,0 +1,19 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "mds solitions official site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miltonarmando/mdsoficial.git"
+  },
+  "author": " <miltonarmando@outlook.com> (miltonarmando <miltonarmando@outlook.com>)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miltonarmando/mdsoficial/issues"
+  },
+  "homepage": "https://github.com/miltonarmando/mdsoficial#readme"
+}
