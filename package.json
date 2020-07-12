@@ -18,9 +18,14 @@
   "homepage": "https://github.com/miltonarmando/mdsoficial#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
     "gulp-ruby-sass": "^4.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
   }
 }
