@@ -26,7 +26,8 @@
 .contactos-top {
   margin-right: 760px;
   margin-left: 20px;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+    transition-font-family: 'Open Sans', sans-serif; }
 
 .contacto1:hover {
   color: #D2AA01; }
@@ -104,8 +105,8 @@ nav {
   border-radius: 10px; }
 
 .header-main {
-  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
-  -ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444'); }
+  filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(OffX=12, OffY=12, Color= "#444"); }
 
 /*****************************Slider****************************/
 .section-meio {
@@ -113,8 +114,8 @@ nav {
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
   height: 20px;
   text-align: center;
-    text-align--webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
-    text-align--ms-filter: progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444'); }
+    text-align-text-align: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+    text-align-text-align: drop-shadow(OffX=12, OffY=12, Color= "#444"); }
 
 .middle-section {
   background-color: grey;
