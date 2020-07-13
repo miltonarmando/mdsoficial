@@ -30,9 +30,6 @@
 .contactos-top {
   margin-right: 760px;
   margin-left: 20px;
-}
-
-.contactos-top {
   transition: all 0.3s ease-in-out;
 }
 
@@ -53,7 +50,12 @@
 
 .rainbow:hover {
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-  background-position: 20vw;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20;
+  }
 }
 
 .rainbow-1 {
@@ -125,6 +127,36 @@ nav {
   border-radius: 10px;
 }
 
+.button:active {
+  color: #fff;
+}
+
+.button:active:after {
+  background: transparent;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
+.button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  background: #fff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  bbackground-position: 0 0;
+  background-position: 400% 0;
+  background-position: 0 0;
+}
+
 .header-main {
   filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(OffX=12, OffY=12, Color= "#444");
@@ -136,11 +168,8 @@ nav {
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
   height: 20px;
   text-align: center;
-}
-
-.section-meio {
-  filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(OffX=12, OffY=12, Color= "#444");
+  text-align-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+  text-align-filter: drop-shadow(OffX=12, OffY=12, Color= "#444");
 }
 
 .middle-section {

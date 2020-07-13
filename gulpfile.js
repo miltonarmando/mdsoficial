@@ -1,19 +1,23 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
+var saneWatch = require('gulp-sane-watch')
 
-sass.compiler = require('node-sass');
  
 gulp.task('sass', function () {
   return gulp.src('sass/**/*.sass')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', function(done) {
-  done();
+gulp.task('watch', () => {
+    saneWatch('css/**/*.css', {
+        events: ['onChange', 'onAdd']
+    }, () => {
+        gulp.task('watch');
+    });
 });
 
-gulp.task('watch', function () {
-  gulp.watch('sass/*.sass', ['sass']);
+gulp.task('default', function(done){ 
+done();
 });
