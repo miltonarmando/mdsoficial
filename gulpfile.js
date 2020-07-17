@@ -6,7 +6,7 @@ var saneWatch = require('gulp-sane-watch')
  
 gulp.task('sass', function () {
   return gulp.src('sass/**/*.sass')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('css'));
 });
 
