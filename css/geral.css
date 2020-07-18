@@ -104,7 +104,8 @@ table {
 
 /*******************Main Menu*******************/
 header {
-  min-height: 390px;
+  min-height: 438px;
+  position: relative;
   background-image: url("../images/fundo-slide-pagina-inicial.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -116,6 +117,21 @@ header {
     content: " "; }
   header:after {
     clear: both; }
+  header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #94B2BB;
+    background-image: -webkit-gradient(linear, 90deg, from(#D2AA01), to(#94B2BB));
+    background-image: -webkit-linear-gradient(90deg, #D2AA01, #94B2BB);
+    background-image: -moz-linear-gradient(90deg, #D2AA01, #94B2BB);
+    background-image: -ms-linear-gradient(90deg, #D2AA01, #94B2BB);
+    background-image: -o-linear-gradient(90deg, #D2AA01, #94B2BB);
+    background-image: linear-gradient(90deg, #D2AA01, #94B2BB);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#D2AA01', EndColorStr='#94B2BB'); }
   header .logo {
     float: left;
     margin: 15px 0 0 0; }
@@ -128,6 +144,12 @@ header {
     header .links nav,
     header .links .social {
       display: inline-block; }
+    @media (max-width: 991px) {
+      header .links nav {
+        display: none; } }
+    @media (max-width: 440px) {
+      header .links nav {
+        display: none; } }
     header .links nav ul li {
       display: inline-block;
       margin: 0 20px 0 0; }
@@ -156,8 +178,16 @@ header {
     border: 3px solid white;
     padding: 20px;
     display: table; }
+    @media (max-width: 440px) {
+      header h1 {
+        font-size: 45px;
+        font-size: 2.8125rem; } }
   header p {
     color: white; }
+    @media (max-width: 440px) {
+      header p {
+        font-size: 20px;
+        font-size: 1.25rem; } }
   header h1,
   header p {
     text-align: center;
