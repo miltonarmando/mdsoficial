@@ -31,7 +31,7 @@
   font-size: 1.375rem; }
 
 section.sobre {
-  margin: 25px 0 100px 0; }
+  margin: 10px 0 0 0; }
   section.sobre .itens {
     display: -webkit-box;
     display: -webkit-flex;
@@ -47,7 +47,7 @@ section.sobre {
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
     justify-content: space-around;
-    margin: 25px 0;
+    margin: 10px 0;
     text-align: center;
     position: relative;
     min-height: 1px;
