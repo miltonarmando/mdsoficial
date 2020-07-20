@@ -1,0 +1,72 @@
+section.sobre
+	margin: 25px 0 100px 0
+	.itens
+		+flexbox
+		+align-items(center)
+		+justify-content(space-around)
+		margin: 25px 0 
+		text-align: center
+
+		+make-sm-column(10)
+		+make-sm-column-offset(1)
+
+		+breakpoint($tablet)
+			display: block
+
+		[class^="icone-"]
+			width: 90px
+			height: 90px
+			text-align: center
+			padding-top: 18px
+			line-height 85px
+			color: $branco
+			+font-size(55px)
+
+			+breakpoint($tablet)
+				display: inline-block
+				width: 60px
+				height: 60px
+				text-align: center
+				padding-top: 10px
+				line-height 60px
+				+font-size(45px)
+				margin: 0 3px
+
+			&.icone-lapis
+				+order(1)
+
+			&.icone-codigo
+				+order(2)
+
+			&.icone-coracao
+				+order(4)
+
+			&.icone-compartilhar
+				+order(5)
+
+		.foto
+			+order(3)
+			+breakpoint($tablet)
+				margin: 0 0 30px
+
+		.icone-lapis,
+		.icone-codigo
+			+border-radius(120px)
+			background-color: $laranja
+
+		.icone-coracao,
+		.icone-compartilhar
+			+border-radius(120px)
+			background-color: $cinzento-claro
+
+	.textos
+		+make-sm-column(8)
+		+make-sm-column-offset(2) 
+		text-align: center
+
+		.texto-sobre
+			+font-size(30px)
+
+		.botao
+			display: table
+			margin: 30px auto

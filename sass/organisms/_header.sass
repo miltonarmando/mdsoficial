@@ -3,55 +3,6 @@
 
 /*************************Top Tasbar*****************************/
 
-/*.bar-container
-  background: url("../images/bar.jpg")
-  display: flex
-  justify-content: space-between
-  padding-left: 100px
-  padding-right: 100px
-
-  li
-    display: inline-block
-    margin-top: 10px
-    margin-bottom: 5px
-
-    a
-      list-style: none
-      text-decoration: none
-      font-size: 14px
-      color: $branco
-      padding: 5px
-
-.contactos-top
-  margin-right: 760px
-  margin-left: 20px
-  transition: all 0.3s ease-in-out
-
-.contacto1:hover, .contacto2:hover
-  color: #D2AA01
-
-.rainbow
-  background-color: #3a4090
-  cursor: pointer
-  padding: 10px
-
-  &:hover
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%)
-    animation: slidebg 5s linear infinite
-
-@keyframes slidebg
-  to
-    background-position: 20vw
-
-.rainbow-1
-  background-color: #3a4090
-
-.rainbow-2
-  background-color: #846217
-
-.rainbow-3
-  background-color: #CD2A6C
-
 /*******************Main Menu*******************/
 
 header
@@ -120,23 +71,25 @@ header
           text-align: center
           +border-radius (120px)
 
-  h1
+  .texto-slide
     clear: both
     color: $laranja
-    margin: 125px auto 37px auto !important
+    margin: 125px auto 35px auto !important
     font-weight: $light
     border: 3px solid $branco
     padding: 20px
     display: table
+    font-size: 40px
     +breakpoint($celular)
-      +font-size(45px)
+      +font-size(57px)
 
-  p
+  .slogan
     color: $branco
+    font-size: 12px
     +breakpoint($celular)
-      +font-size(20px)
+      +font-size(18px)
 
-  h1,
-  p
+  .texto-slide,
+  .slogan
     text-align: center
     text-transform: uppercase
