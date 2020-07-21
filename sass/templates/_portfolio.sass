@@ -1,0 +1,77 @@
+header
+	min-height: 510px
+	margin: 0 0 20px
+
+	background:
+		image: url('../images/fundo-pagina-portfolio.jpg')
+		position: top center
+		repeat: no-repeat
+		color: $preto
+		attachment: fixed
+
+	h1
+		margin-top: 190px !important
+		+breakpoint($celular)
+			font-size: 30px !important
+
+.portfolio
+	ul
+		+clearfix
+		+make-row
+
+		li
+			+make-sm-column(3)
+			+make-xs-column(6)
+			overflow: hidden
+			margin-bottom: 30px
+
+			figure
+				background-color: transparent !important 
+				position: relative
+				
+
+				&:hover
+					a
+						+opacity(1)
+
+					.overlay
+						top: 0
+
+
+				img
+					+img-responsive
+
+				figcaption
+					background-color: transparent !important 
+					a
+						text-align: center
+						text-transform: uppercase
+						position: absolute
+						z-index: 2
+						color: $branco
+						width: 100%
+						top: 40%
+						+opacity(1)
+
+						h3
+							+font-size(22px)
+							margin: 0
+							color: $branco !important
+						p
+							+font-size(18px)
+							color: $branco !important
+					a,
+					.overlay
+						+transition(.3s)
+
+					.overlay
+						+gradient(60deg, $laranja, $cinzento-claro)
+						+opacity(.8)
+						background-color: none
+						position: absolute
+						left: 0
+						top: 100%
+						z-index: 1
+						display: block
+						height: 100%
+						width: 100%

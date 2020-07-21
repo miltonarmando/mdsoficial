@@ -22,6 +22,7 @@
   "devDependencies": {
     "font-awesome": "^5.13.1",
     "bootstrap-sass": "^3.4.1",
-    "breakpoint-sass": "^2.7.1"
+    "breakpoint-sass": "^2.7.1",
+    "imagehover.css": "^2.0.0"
   }
 }
