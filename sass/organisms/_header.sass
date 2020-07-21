@@ -7,7 +7,7 @@
 
 header
   +clearfix
-  min-height: 438px
+  min-height: 500px
   position: relative
 
   &:after
@@ -18,15 +18,6 @@ header
     width: 100%
     height: 45px
     +gradient(90deg, $laranja, $cinzento-claro)
-
-  background:
-    image: url('../images/fundo-slide-pagina-inicial.jpg')
-    position: top center
-    repeat: no-repeat
-    color: $preto
-    attachment: fixed
-    size: auto
-
 
   .logo
     float: left
@@ -74,9 +65,11 @@ header
   .texto-slide
     clear: both
     color: $laranja
-    margin: 125px auto 35px auto !important
+    margin: 190px auto 25px auto
     font-weight: $light
     border: 3px solid $branco
+    background-color: $preto
+    opacity: 0.6
     padding: 20px
     display: table
     font-size: 40px

@@ -57,14 +57,8 @@ table {
 /*************************Top Tasbar*****************************/
 /*******************Main Menu*******************/
 header {
-  min-height: 438px;
-  position: relative;
-  background-image: url("../images/fundo-slide-pagina-inicial.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: #000;
-  background-attachment: fixed;
-  background-size: auto; }
+  min-height: 500px;
+  position: relative; }
   header:before, header:after {
     display: table;
     content: " "; }
@@ -126,9 +120,11 @@ header {
   header .texto-slide {
     clear: both;
     color: #D2AA01;
-    margin: 125px auto 35px auto !important;
+    margin: 190px auto 25px auto;
     font-weight: 300;
     border: 3px solid white;
+    background-color: #000;
+    opacity: 0.6;
     padding: 20px;
     display: table;
     font-size: 40px; }

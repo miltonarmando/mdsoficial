@@ -1,0 +1,155 @@
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+.botao {
+  border: 2px solid #000;
+  color: #000;
+  text-transform: upprecase;
+  font-weight: 700; }
+  .botao:hover {
+    border-color: #94B2BB;
+    color: #D2AA01; }
+  .botao:focus {
+    border-color: #D2AA01;
+    color: #94B2BB; }
+
+.pequeno {
+  padding: 7px;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.medio {
+  padding: 9px;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.grande {
+  padding: 11px;
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+.textos {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .textos {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 768px) {
+    .textos {
+      margin-left: 16.66667%; } }
+  .textos .texto-sobre {
+    font-size: 30px;
+    font-size: 1.875rem; }
+  .textos .botao {
+    display: table;
+    margin: 30px auto; }
+
+.habilidades {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 40px; }
+  .habilidades:before, .habilidades:after {
+    display: table;
+    content: " "; }
+  .habilidades:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .habilidades {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 768px) {
+    .habilidades {
+      margin-left: 8.33333%; } }
+  .habilidades li {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .habilidades li {
+        float: left;
+        width: 50%; } }
+    .habilidades li h2 {
+      font-size: 20px; }
+      .habilidades li h2 i {
+        font-size: 38px !important;
+        margin: 40px 0 10px; }
+        .habilidades li h2 i.fa-html5 {
+          color: orange; }
+        .habilidades li h2 i.fa-css3 {
+          color: #3a4090; }
+        .habilidades li h2 i.fa-wordpress {
+          color: #1a98e8; }
+        .habilidades li h2 i.fa-git-alt {
+          color: #000; }
+  .habilidades li.habilidade-0 .barra span {
+    width: 0%; }
+  .habilidades li.habilidade-1 .barra span {
+    width: 10%; }
+  .habilidades li.habilidade-2 .barra span {
+    width: 20%; }
+  .habilidades li.habilidade-3 .barra span {
+    width: 30%; }
+  .habilidades li.habilidade-4 .barra span {
+    width: 40%; }
+  .habilidades li.habilidade-5 .barra span {
+    width: 50%; }
+  .habilidades li.habilidade-6 .barra span {
+    width: 60%; }
+  .habilidades li.habilidade-7 .barra span {
+    width: 70%; }
+  .habilidades li.habilidade-8 .barra span {
+    width: 80%; }
+  .habilidades li.habilidade-9 .barra span {
+    width: 90%; }
+  .habilidades li.habilidade-10 .barra span {
+    width: 100%; }
+  .habilidades .barra {
+    background-color: #94B2BB;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    -ms-border-radius: 120px;
+    border-radius: 120px;
+    display: block;
+    width: 100%;
+    height: 17px;
+    margin: 10px 0; }
+    .habilidades .barra span {
+      display: block;
+      height: 100%;
+      -webkit-border-radius: 120px;
+      -moz-border-radius: 120px;
+      -ms-border-radius: 120px;
+      border-radius: 120px;
+      background-color: #444;
+      background-image: -webkit-gradient(linear, 90deg, from(#D2AA01), to(#444));
+      background-image: -webkit-linear-gradient(90deg, #D2AA01, #444);
+      background-image: -moz-linear-gradient(90deg, #D2AA01, #444);
+      background-image: -ms-linear-gradient(90deg, #D2AA01, #444);
+      background-image: -o-linear-gradient(90deg, #D2AA01, #444);
+      background-image: linear-gradient(90deg, #D2AA01, #444);
+      filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#D2AA01', EndColorStr='#444'); }
+
+header {
+  min-height: 375px;
+  margin: 0 0 20px;
+  background-image: url("../images/fundo-pagina-sobre.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-attachment: fixed; }
+  header h1 {
+    margin-top: 125px !important; }
+
+.botao {
+  display: table;
+  margin: 0 auto 35px;
+  clear: both; }
