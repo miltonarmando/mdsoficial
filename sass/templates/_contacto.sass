@@ -1,0 +1,56 @@
+header
+	min-height: 400px
+	margin: 0 0 20px
+
+	background:
+		image: url('../images/fundo-pagina-contacto.jpg')
+		position: top center
+		repeat: no-repeat
+		color: $preto
+		attachment: fixed
+
+	h1
+		margin-top: 125px !important
+
+.contacto
+
+	form
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+
+		.cols
+			+make-row
+		.col
+			+make-sm-column(6)
+
+		input,
+		select,
+		textarea
+			width: 100%
+			border: 2px solid $cinzento
+			padding: 7px
+			text-transform: uppercase
+			+transition(.3s)
+
+			&:hover
+				border-color: $laranja
+
+
+			&:focus
+				border-color: $cinzento-claro
+
+		select
+			height: 30px
+
+		textarea
+			height: 210px
+
+		button
+			background-color: transparent
+			display: table
+			margin: 0 auto
+
+		.bg-sucess,
+		bg-danger
+			padding: 7px

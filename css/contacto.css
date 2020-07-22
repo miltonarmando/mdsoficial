@@ -3,3 +3,107 @@
 /* ======== Outros */
 /* ======== Background Color Opacity */
 /* ======== Columns */
+.botao {
+  border: 2px solid #000;
+  color: #000;
+  text-transform: upprecase;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .botao:hover {
+    border-color: #94B2BB;
+    color: #D2AA01; }
+  .botao:focus {
+    border-color: #D2AA01;
+    color: #94B2BB; }
+
+.pequeno {
+  padding: 7px;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.medio {
+  padding: 9px;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.grande {
+  padding: 11px;
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+header {
+  min-height: 400px;
+  margin: 0 0 20px;
+  background-image: url("../images/fundo-pagina-contacto.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-attachment: fixed; }
+  header h1 {
+    margin-top: 125px !important; }
+
+.contacto form {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  .contacto form:before, .contacto form:after {
+    display: table;
+    content: " "; }
+  .contacto form:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .contacto form {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 768px) {
+    .contacto form {
+      margin-left: 16.66667%; } }
+  .contacto form .cols {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .contacto form .cols:before, .contacto form .cols:after {
+      display: table;
+      content: " "; }
+    .contacto form .cols:after {
+      clear: both; }
+  .contacto form .col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media (min-width: 768px) {
+      .contacto form .col {
+        float: left;
+        width: 50%; } }
+  .contacto form input,
+  .contacto form select,
+  .contacto form textarea {
+    width: 100%;
+    border: 2px solid #444;
+    padding: 7px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .contacto form input:hover,
+    .contacto form select:hover,
+    .contacto form textarea:hover {
+      border-color: #D2AA01; }
+    .contacto form input:focus,
+    .contacto form select:focus,
+    .contacto form textarea:focus {
+      border-color: #94B2BB; }
+  .contacto form select {
+    height: 34px; }
+  .contacto form textarea {
+    height: 210px; }
+  .contacto form button {
+    background-color: transparent;
+    display: table;
+    margin: 0 auto; }
+  .contacto form .bg-sucess,
+  .contacto form bg-danger {
+    padding: 7px; }
