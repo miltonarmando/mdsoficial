@@ -97,7 +97,7 @@ header {
     .contacto form textarea:focus {
       border-color: #94B2BB; }
   .contacto form select {
-    height: 34px; }
+    height: 30px; }
   .contacto form textarea {
     height: 210px; }
   .contacto form button {

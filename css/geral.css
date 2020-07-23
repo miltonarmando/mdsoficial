@@ -144,6 +144,89 @@ header {
     text-align: center;
     text-transform: uppercase; }
 
+.menu-responsivo {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  left: -150px;
+  top: 0;
+  background-color: #94B2BB;
+  background-image: -webkit-gradient(linear, 0deg, from(#D2AA01), to(#94B2BB));
+  background-image: -webkit-linear-gradient(0deg, #D2AA01, #94B2BB);
+  background-image: -moz-linear-gradient(0deg, #D2AA01, #94B2BB);
+  background-image: -ms-linear-gradient(0deg, #D2AA01, #94B2BB);
+  background-image: -o-linear-gradient(0deg, #D2AA01, #94B2BB);
+  background-image: linear-gradient(0deg, #D2AA01, #94B2BB);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#D2AA01', EndColorStr='#94B2BB'); }
+  .menu-responsivo.ativo {
+    left: 0; }
+  .menu-responsivo ul li {
+    border-bottom: 1px solid white; }
+    .menu-responsivo ul li a {
+      padding: 7px;
+      display: block;
+      color: white; }
+      .menu-responsivo ul li a:hover, .menu-responsivo ul li a:focus {
+        background-color: rgba(210, 170, 1, 0.9); }
+
+.layout.ativo {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-left: 150px; }
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+  margin: 0 12px;
+  display: none; }
+  @media (max-width: 991px) {
+    .toggle {
+      display: block; } }
+  @media (max-width: 440px) {
+    .toggle {
+      display: block; } }
+  .toggle:hover span:nth-child(1) {
+    top: 6px; }
+  .toggle:hover span:nth-child(3) {
+    top: 20px; }
+  .toggle.ativo span:nth-child(2) {
+    display: none; }
+  .toggle.ativo span:nth-child(1) {
+    top: 15px;
+    -webkit-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+    transform: rotate(48deg); }
+  .toggle.ativo span:nth-child(3) {
+    top: 14px;
+    -webkit-transform: rotate(128deg);
+    -ms-transform: rotate(128deg);
+    -o-transform: rotate(128deg);
+    transform: rotate(128deg); }
+  .toggle span {
+    width: 100%;
+    height: 1px;
+    content: " ";
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .toggle span:nth-child(1) {
+      top: 4px; }
+    .toggle span:nth-child(2) {
+      top: 13px; }
+    .toggle span:nth-child(3) {
+      top: 22px; }
+
 footer .footer-bar {
   background-color: #94B2BB;
   background-image: -webkit-gradient(linear, 120deg, from(#D2AA01), to(#94B2BB));
